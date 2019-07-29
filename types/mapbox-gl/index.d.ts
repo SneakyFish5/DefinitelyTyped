@@ -640,6 +640,10 @@ declare namespace mapboxgl {
         setHTML(html: string): this;
 
         setDOMContent(htmlNode: Node): this;
+
+        getMaxWidth(): string;
+
+        setMaxWidth(maxWidth: string): this;
     }
 
     export interface PopupOptions {
@@ -652,6 +656,8 @@ declare namespace mapboxgl {
         offset?: number | PointLike | { [key: string]: PointLike; };
 
         className?: string;
+
+        maxWidth?: string;
     }
 
     export interface Style {
